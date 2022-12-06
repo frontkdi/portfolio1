@@ -1,0 +1,55 @@
+제품 product
+이벤트 event
+스토리 story
+필터스페이스 filterspace
+브랜드 brand
+
+고객만족센터 customer_center
+매장안내 Store_information
+
+통합회원전환 customer_change
+
+장바구니 shopping_basket
+검색 search
+로그인 login
+
+
+
+container 제외 padding: 0 0 120px 0
+
+
+topNav padding: 60px 0 20px 0; 높이 108px
+
+section1 슬라이드는 화면 100% 높이 551px
+
+section2, section3
+title 높이 140px, padding: 100px 0 20px 0; 
+content padding: 0 0 60px 0;
+          li width: 25%; padding: 0 11px;
+          gap padding: 20px 20px 30px 20px;
+
+section4 높이632.725px;
+
+section5 padding-bottom: 150px
+title 높이 175px; padding: 100px 0 20px 0
+content padding-bottom: 44px
+
+section 6 높이 240px 
+title font-size 26px
+background: f5f5f5;
+
+
+
+slidetoggle ( 이유진님 피드백 )
+let t = 0;
+$('.category-btn').on({
+ click: function(){
+  $(this).next().stop().slideToggle(300);
+  if( t === 0 ){
+    t = 1;
+    $().
+   }
+ }
+})
+
+김혜준님 피드백 확인

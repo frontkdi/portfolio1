@@ -1,0 +1,201 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./footer.css");
+#wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 89px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#wrap #main {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+#wrap #main #footer {
+  width: 100%;
+  height: 352px;
+  position: relative;
+}
+#wrap #main #footer .row1 {
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  border-top: 1px solid #eee;
+}
+#wrap #main #footer .row1 .left-box {
+  font-weight: 400;
+}
+#wrap #main #footer .row1 .left-box a {
+  padding: 0 10px;
+  font-size: 13px;
+  color: #999;
+  transition: all 0.2s;
+}
+#wrap #main #footer .row1 .left-box a:hover {
+  color: #222;
+}
+#wrap #main #footer .row1 .left-box a:nth-child(5) {
+  color: #222;
+  transition: all 0.2s;
+}
+#wrap #main #footer .row1 .left-box a:nth-child(5):hover {
+  color: #777;
+}
+#wrap #main #footer .row1 .left-box i {
+  font-size: 12px;
+  color: #dcdcdc;
+}
+#wrap #main #footer .row1 .right-box select {
+  width: 120px;
+  height: 60px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(85, 85, 85);
+  border: 0;
+  outline: 0;
+}
+#wrap #main #footer .row1 .right-box i {
+  font-size: 12px;
+  color: #eee;
+  margin: 0 10px;
+}
+#wrap #main #footer .row2 {
+  width: 100%;
+  height: 186px;
+  background: #f9f9f9;
+  padding: 25px 60px;
+}
+#wrap #main #footer .row2 .foot-info {
+  width: 100%;
+  position: relative;
+}
+#wrap #main #footer .row2 .foot-info .address {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#wrap #main #footer .row2 .foot-info .address p {
+  color: rgb(153, 153, 153);
+}
+#wrap #main #footer .row2 .foot-info .address p i {
+  font-size: 10px;
+  color: rgb(220, 220, 220);
+  margin: 0 8px;
+}
+#wrap #main #footer .row2 .foot-info .address p a {
+  display: inline-block;
+}
+#wrap #main #footer .row2 .foot-info .address p a.business-info {
+  font-size: 11px;
+  width: 110px;
+  height: 18px;
+  padding: 0px 10px;
+  margin-left: 5px;
+  color: rgb(153, 153, 153);
+  line-height: 18px;
+  text-align: center;
+  justify-content: center;
+  background: rgb(238, 238, 238);
+  border: 1px solid rgb(187, 187, 187);
+  vertical-align: top;
+  transition: all 0.2s;
+}
+#wrap #main #footer .row2 .foot-info .address p a.business-info:hover {
+  color: #fff;
+  background: #888;
+}
+#wrap #main #footer .row2 .foot-info .address p a.mail {
+  vertical-align: top;
+  text-decoration: underline;
+  color: rgb(153, 153, 153);
+}
+#wrap #main #footer .row2 .foot-info .address p a.mail:hover {
+  color: #333;
+}
+#wrap #main #footer .row2 .foot-info .address em {
+  display: block;
+  margin: 16px 0 0 0;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+#wrap #main #footer .row2 .foot-info .foot-sns {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#wrap #main #footer .row2 .foot-info .foot-sns a {
+  width: 25px;
+  height: 25px;
+  margin: 0 8px;
+  overflow: hidden;
+}
+#wrap #main #footer .row2 .foot-info .foot-sns a:hover {
+  opacity: 0.7;
+}
+#wrap #main #footer .row2 .foot-info .foot-sns a img {
+  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+}
+#wrap #main #footer .row3 {
+  width: 100%;
+  height: 106px;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+#wrap #main #footer .row3 .foot-mark {
+  width: 100%;
+  height: 100%;
+  padding: 30px 60px 40px 60px;
+}
+#wrap #main #footer .row3 .foot-mark ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #footer .row3 .foot-mark ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+#wrap #main #footer .row3 .foot-mark ul li img {
+  width: 36px;
+  height: 36px;
+  margin: 0 10px 0 0;
+}
+#wrap #main #footer .row3 .foot-mark ul li span {
+  font-size: 11px;
+  line-height: 14px;
+  color: rgb(153, 153, 153);
+}
+#wrap #main #footer .row3 .foot-mark ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#wrap #main #footer .row3 .foot-mark ul li a:hover span {
+  color: #222;
+}
+#wrap #main #footer .row3 .foot-mark ul li a img {
+  width: 36px;
+  height: 36px;
+}
+#wrap #main #footer .row3 .foot-mark ul li a span {
+  font-size: 11px;
+  line-height: 14px;
+  color: rgb(153, 153, 153);
+}

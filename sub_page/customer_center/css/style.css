@@ -1,0 +1,383 @@
+@import url("../../../css/fonts.css");
+@import url("../../../css/reset.css");
+@import url("../../../css/header.css");
+@import url("../../../css/footer.css");
+#wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 89px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#wrap #main {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+#wrap #main .container {
+  padding: 0 0 120px 0;
+}
+#wrap #main .container .topNav {
+  width: 100%;
+  padding: 0 60px;
+  z-index: 3;
+}
+#wrap #main .container .topNav .nav-con {
+  padding: 60px 0 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+#wrap #main .container .topNav .nav-con .left {
+  padding: 0 45px 0 0;
+}
+#wrap #main .container .topNav .nav-con .left a {
+  display: block;
+}
+#wrap #main .container .topNav .nav-con .left a h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+#wrap #main .container .topNav .nav-con .rightMenu {
+  height: 20px;
+  display: block;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul {
+  display: flex;
+  padding: 15px 0 0 0;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li {
+  margin: 0 25px 0 0;
+  position: relative;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li a {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  transition: all 0.2s;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li a:hover {
+  color: #222;
+}
+#wrap #main .container #section1 {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+#wrap #main .container #section1 .title {
+  padding: 60px 0 25px 0;
+  text-align: center;
+}
+#wrap #main .container #section1 .title h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #222;
+}
+#wrap #main .container #section1 .cs-box {
+  overflow: hidden;
+  margin: 10px 0 60px 0;
+}
+#wrap #main .container #section1 .cs-box li {
+  float: left;
+  width: 230px;
+  margin: 0 0 0 20px;
+}
+#wrap #main .container #section1 .cs-box li:first-child {
+  margin: 0;
+}
+#wrap #main .container #section1 .cs-box li:first-child:hover a h3::before {
+  background-position-y: -50px;
+}
+#wrap #main .container #section1 .cs-box li:nth-child(2) a h3::before {
+  background-position-y: -100px;
+}
+#wrap #main .container #section1 .cs-box li:nth-child(2) a:hover h3::before {
+  background-position-y: -150px;
+}
+#wrap #main .container #section1 .cs-box li:nth-child(3) a h3::before {
+  background-position-y: -200px;
+}
+#wrap #main .container #section1 .cs-box li:nth-child(3) a:hover h3::before {
+  background-position-y: -250px;
+}
+#wrap #main .container #section1 .cs-box li a {
+  display: block;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  padding: 35px 28px;
+  transition: all 0.3s;
+}
+#wrap #main .container #section1 .cs-box li a:hover {
+  background: #999;
+}
+#wrap #main .container #section1 .cs-box li a:hover h3 {
+  color: #f9f9f9;
+}
+#wrap #main .container #section1 .cs-box li a:hover p {
+  color: #f9f9f9;
+}
+#wrap #main .container #section1 .cs-box li a h3 {
+  color: #222;
+  font-size: 14px;
+  line-height: 20px;
+}
+#wrap #main .container #section1 .cs-box li a h3::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 44px;
+  margin: 0 0 10px 0;
+  background: url(../images/cs_section.jpg) no-repeat 50% 0;
+}
+#wrap #main .container #section1 .cs-box li a p {
+  margin: 13px 0 0 0;
+  font-size: 13px;
+  color: #999;
+  line-height: 22px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+#wrap #main .container #section1 .contentBox {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main .container #section1 .contentBox .left {
+  width: 470px;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #eee;
+}
+#wrap #main .container #section1 .contentBox .left .board-head {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 0 0 5px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main .container #section1 .contentBox .left .board-head h2 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+#wrap #main .container #section1 .contentBox .left .board-head a {
+  display: inline-block;
+  width: 68px;
+  font-size: 14px;
+  color: #555;
+  position: relative;
+}
+#wrap #main .container #section1 .contentBox .left .board-head a::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  background: #555;
+  margin-top: -3px;
+  margin-right: 3px;
+}
+#wrap #main .container #section1 .contentBox .left .board-head a::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  transform: rotate(90deg);
+  background: #555;
+  margin-top: -3px;
+  margin-right: 3px;
+}
+#wrap #main .container #section1 .contentBox .left .board-list {
+  width: 100%;
+}
+#wrap #main .container #section1 .contentBox .left .board-list ul {
+  width: 100%;
+}
+#wrap #main .container #section1 .contentBox .left .board-list ul li {
+  width: 100%;
+  padding: 15px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap #main .container #section1 .contentBox .left .board-list ul li a {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 20px;
+  color: #555;
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#wrap #main .container #section1 .contentBox .left .board-list ul li span {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
+}
+#wrap #main .container #section1 .contentBox .right {
+  width: 480px;
+  height: 288px;
+  background: #f9f9f9;
+  padding: 35px 0 0 0;
+  text-align: center;
+}
+#wrap #main .container #section1 .contentBox .right h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+#wrap #main .container #section1 .contentBox .right p {
+  padding: 15px 0 20px 0;
+  font-size: 13px;
+  line-height: 22px;
+  color: #999;
+}
+#wrap #main .container #section1 .contentBox .right .chat {
+  text-align: center;
+}
+#wrap #main .container #section1 .contentBox .right .chat a {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin: 0 18px 0 15px;
+  background: url() no-repeat;
+}
+#wrap #main .container #section1 .contentBox .right .chat a:nth-child(1) {
+  background-image: url(../images/ico_chat.png);
+  background-position: -112px 0;
+}
+#wrap #main .container #section1 .contentBox .right .chat a:nth-child(1):hover {
+  background-position-y: -56px;
+}
+#wrap #main .container #section1 .contentBox .right .chat a:nth-child(2) {
+  background-image: url(../images/ico_chat.png);
+  background-position: -56px 0;
+}
+#wrap #main .container #section1 .contentBox .right .chat a:nth-child(2):hover {
+  background-position-y: -56px;
+}
+#wrap #main .container #section1 .contentBox .right .chat a:nth-child(3) {
+  background-image: url(../images/ico_chat.png);
+  background-position: 0 0;
+}
+#wrap #main .container #section1 .contentBox .right .chat a:nth-child(3):hover {
+  background-position-y: -56px;
+}
+#wrap #main .container #section2 {
+  margin: 60px 0 -120px 0;
+  padding: 60px 0 80px 0;
+  background: #f9f9f9;
+}
+#wrap #main .container #section2 .content {
+  padding: 60px 0 80px 0;
+  max-width: 980px;
+  margin: 0 auto;
+}
+#wrap #main .container #section2 .content ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main .container #section2 .content ul .col-title {
+  width: 50%;
+  height: 170px;
+  padding: 6px;
+}
+#wrap #main .container #section2 .content ul .col-title .title-box {
+  position: relative;
+}
+#wrap #main .container #section2 .content ul .col-title .title-box h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #222;
+  padding: 0 0 0 20px;
+}
+#wrap #main .container #section2 .content ul .col-title .title-box p {
+  padding: 12px 0 50px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  border-bottom: 1px solid #eee;
+}
+#wrap #main .container #section2 .content ul .col-title .title-box span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/ico_hot_faq.webp) no-repeat;
+}
+#wrap #main .container #section2 .content ul .all-btn {
+  display: inline-block;
+  padding: 15px 10px 0 20px;
+  position: relative;
+}
+#wrap #main .container #section2 .content ul .all-btn::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  background: #555;
+  margin-top: 3px;
+}
+#wrap #main .container #section2 .content ul .all-btn::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  transform: rotate(90deg);
+  background: #555;
+  margin-top: 3px;
+}
+#wrap #main .container #section2 .content ul li {
+  width: 25%;
+  height: 182px;
+  padding: 6px;
+}
+#wrap #main .container #section2 .content ul li .col-box {
+  display: block;
+  height: 170px;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+#wrap #main .container #section2 .content ul li .col-box:hover {
+  border: 1px solid #dcdcdc;
+  background: #f9f9f9;
+}
+#wrap #main .container #section2 .content ul li .col-box h4 {
+  font-size: 13px;
+  color: #999;
+}
+#wrap #main .container #section2 .content ul li .col-box p {
+  margin: 15px 0 0 0;
+  font-size: 13px;
+  line-height: 22px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="slide-btn-box"> <!-- 손진님꺼 피드백 확인 -->
+    <div class="slide-btn"><a href="#" class="page-btn slide-btn1">1</a></div>
+    <div class="slide-btn"><a href="#" class="page-btn slide-btn2">2</a></div>
+    <div class="slide-btn"><a href="#" class="page-btn slide-btn3">3</a></div>
+    <div class="slide-btn"><a href="#" class="page-btn slide-btn4">4</a></div>
+    <div class="slide-btn"><a href="#" class="page-btn slide-btn5">5</a></div>
+  </div> 
+
+  <style>
+    a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 30px;
+      background: #fff;
+      font-size: 0;
+      transition: all .3s;
+    }
+    a.on {
+      width: 30px;
+      background: #ffc300;
+    }
+  </style>
+
+  <script>
+    function mainSlide(){
+      // 내용
+      pageBtnFn(cnt); // 밑에다 선언
+    }
+
+    // 슬라이드 페이지버튼 이벤트
+    function pageBtnFn(z){
+      $('.page-btn').removeClass('on');
+      $('.page-btn').eq(z).addClass('on');
+    }
+  </script>
+
+</body>
+</html>

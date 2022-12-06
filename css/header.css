@@ -1,0 +1,263 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./footer.css");
+#wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 89px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#wrap #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 89px;
+  height: 100%;
+  background: #fff;
+  z-index: 91;
+}
+#wrap #header .fixmenu {
+  z-index: 100;
+  padding: 25px 0 0 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+#wrap #header .fixmenu.on {
+  border-right: 0;
+}
+#wrap #header .fixmenu.on .top > a > img {
+  display: none;
+}
+#wrap #header .fixmenu .top {
+  width: 100%;
+  height: 33.333%;
+}
+#wrap #header .fixmenu .top > a > img {
+  width: 28px;
+  height: 28px;
+}
+#wrap #header .fixmenu .center {
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #header .fixmenu .center .all-menu-btn {
+  margin: 0 0 50px 0;
+}
+#wrap #header .fixmenu .center .all-menu-btn > img {
+  width: 27px;
+  height: 27px;
+}
+#wrap #header .fixmenu .center .all-menu-close-btn {
+  display: none;
+  margin: 0 0 50px 0;
+}
+#wrap #header .fixmenu .center .all-menu-close-btn > img {
+  width: 27px;
+  height: 27px;
+}
+#wrap #header .fixmenu .center .all-menu {
+  width: 269px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 30px;
+  text-align: left;
+  background: #fff;
+  display: none;
+  z-index: 99;
+}
+#wrap #header .fixmenu .center .all-menu.on {
+  border-right: 1px solid #ccc;
+  -webkit-animation: slideMenuOpen 0.5s forwards ease-in-out;
+          animation: slideMenuOpen 0.5s forwards ease-in-out;
+}
+@-webkit-keyframes slideMenuOpen {
+  0% {
+    left: 0px;
+    opacity: 0;
+  }
+  50% {
+    left: 50px;
+    opacity: 0;
+  }
+  100% {
+    left: 89px;
+    opacity: 1;
+  }
+}
+@keyframes slideMenuOpen {
+  0% {
+    left: 0px;
+    opacity: 0;
+  }
+  50% {
+    left: 50px;
+    opacity: 0;
+  }
+  100% {
+    left: 89px;
+    opacity: 1;
+  }
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row1 {
+  width: 100%;
+  height: 80px;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row1 > a {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row1 > a > img {
+  width: 130px;
+  height: 26px;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 {
+  width: 140px;
+  height: 100%;
+  padding: 80px 0 50px 0;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-1 {
+  width: 100%;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-1 > ul {
+  width: 100%;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-1 > ul > li {
+  margin: 25px 0;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-1 > ul > li a {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: rgb(151, 151, 151);
+  transition: all 0.3s;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-1 > ul > li a:hover {
+  color: #333;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-2 {
+  width: 100%;
+  padding: 30px 0;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-2 > ul > li {
+  padding: 10px 0;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-2 > ul > li a {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
+  transition: all 0.3s;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-2 > ul > li a:hover {
+  color: #333;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-3 {
+  width: 100%;
+  margin: 40px 0 0 0;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-3 > button {
+  width: 140px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  background: rgb(238, 238, 238);
+  border: 1px solid #ccc;
+  padding: 0 8px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row2 .row2-3 > button:hover {
+  background: #777;
+  border: 1px solid #777;
+  color: #fff;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row3 {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row3 a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row3 a span.on {
+  color: #333;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row3 a i {
+  margin: 0 2px;
+  font-size: 6px;
+}
+#wrap #header .fixmenu .center .all-menu .all-menu-container .row3 > img {
+  margin: 30px 0 0 0;
+  width: 146px;
+  height: 44px;
+}
+#wrap #header .fixmenu .bottom {
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  padding: 0 0 25px 0;
+}
+#wrap #header .fixmenu .bottom > a {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#wrap #header .fixmenu .bottom > a span {
+  position: absolute;
+  top: 0;
+  right: 18.5px;
+  margin-top: -10px;
+  display: none;
+  width: 50px;
+  height: 18px;
+  font-size: 11px;
+  letter-spacing: -0.5px;
+  line-height: 18px;
+  color: #fff;
+  background: #222;
+}
+#wrap #header .fixmenu .bottom > a span::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #222;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  margin: -6px 0 0 14px;
+}
+#wrap #header .fixmenu .bottom > a span.on {
+  display: block;
+}
+#wrap #header .fixmenu .bottom > a > img {
+  margin: 10px 0;
+  width: auto;
+}

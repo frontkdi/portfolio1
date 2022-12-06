@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import './_config.scss';
+@import url('#{$path}fonts.css'); 
+@import url('#{$path}reset.css');
+@import url('#{$path}header.css');
+@import url('#{$path}footer.css');
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 89px;
+  position: relative;
+  user-select: none;
+  // header //
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 89px;
+    height: 100%;
+    background: #fff;
+    z-index: 91;
+    .fixmenu {
+      z-index: 100;
+      padding: 25px 0 0 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      text-align: center;
+      border-right: 1px solid #ccc;
+      &.on {
+        border-right: 0;
+        .top {
+          > a {
+            > img {
+              display: none;
+            }
+          }
+        }
+      }
+      .top {
+        width: 100%;
+        height: 33.333%;
+        > a {
+          > img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+      .center {
+        width: 100%;
+        height: 33.333%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .all-menu-btn {
+          margin: 0 0 50px 0;
+          > img {
+            width: 27px;
+            height: 27px;
+          }
+        }
+        .all-menu-close-btn {
+          display: none;
+          margin: 0 0 50px 0;
+          > img {
+            width: 27px;
+            height: 27px;
+          }
+        }
+        .all-menu {
+          width: 269px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 35px 30px;
+          text-align: left;
+          background: #fff;
+          display: none;
+          z-index: 99;
+          &.on {
+            border-right: 1px solid #ccc;
+            animation: slideMenuOpen 0.5s forwards ease-in-out;
+          }
+          @keyframes slideMenuOpen {
+            0% {left: 0px; opacity: 0;}         
+            50% {left: 50px; opacity: 0;} 
+            100% {left: 89px; opacity: 1;} 
+          }
+          .all-menu-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            .row1 {
+              width: 100%;
+              height: 80px;
+              > a {
+                width: 100%;
+                height: 100%;
+                > img {
+                  width: 130px;
+                  height: 26px;
+                }
+              }
+            }
+            .row2 {
+              width: 140px;
+              height: 100%;
+              padding: 80px 0 50px 0;
+              .row2-1 {
+                width: 100%;
+                > ul {
+                  width: 100%;
+                  > li {
+                    margin: 25px 0;
+                    a {
+                      font-size: 22px;
+                      font-weight: 400;
+                      letter-spacing: -1px;
+                      color: rgb(151, 151, 151);
+                      transition: all .3s;
+                      &:hover {
+                        color: #333;
+                      }
+                    }
+                  }
+                }
+              }
+              .row2-2 {
+                width: 100%;
+                padding: 30px 0;
+                > ul {
+                  > li {
+                    padding: 10px 0;
+                    a {
+                      font-size: 13px;
+                      font-weight: 400;
+                      color: rgb(170, 170, 170);
+                      transition: all .3s;
+                      &:hover {
+                        color: #333;
+                      }
+                    }
+                  }
+                }
+              }
+              .row2-3 {
+                width: 100%;
+                margin: 40px 0 0 0;
+                > button {
+                  width: 140px;
+                  height: 30px;
+                  font-size: 13px;
+                  font-weight: 400;
+                  color: #333;
+                  background: rgb(238, 238, 238);
+                  border: 1px solid #ccc;
+                  padding: 0 8px;
+                  cursor: pointer;
+                  transition: all .5s;
+                  &:hover {
+                    background: #777;
+                    border: 1px solid #777;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            .row3 {
+              width: 100%;
+              height: 80px;
+              display: flex;
+              flex-flow: column nowrap;
+              a {
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+                span {
+                  &.on {
+                    color: #333;
+                  }
+                }
+                i {
+                  margin: 0 2px;
+                  font-size: 6px;
+                }
+              }
+              > img {
+                margin: 30px 0 0 0;
+                width: 146px;
+                height: 44px;
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        width: 100%;
+        height: 33.333%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        padding: 0 0 25px 0;
+        > a {
+          position: relative;
+          display: block;
+          width: 100%;
+          span {
+            position: absolute;
+            top: 0;
+            right: 18.5px;
+            margin-top: -10px;
+            display: none;
+            width: 50px;
+            height: 18px;
+            font-size: 11px;
+            letter-spacing: -0.5px;
+            line-height: 18px;
+            color: #fff;
+            background: #222;
+            &::after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 0;
+              border-top: 12px solid #222;
+              border-left: 11px solid transparent;
+              border-right: 11px solid transparent;
+              margin: -6px 0 0 14px;
+            }
+            &.on {
+              display: block;
+            }
+          }
+          > img {
+            margin: 10px 0;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

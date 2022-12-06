@@ -1,0 +1,267 @@
+@import url("../../../../css/fonts.css");
+@import url("../../../../css/reset.css");
+@import url("../../../../css/header.css");
+@import url("../../../../css/footer.css");
+#wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 89px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#wrap #main {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+#wrap #main .container {
+  padding: 0 0 120px 0;
+}
+#wrap #main .container .topNav {
+  width: 100%;
+  padding: 0 60px;
+  z-index: 3;
+}
+#wrap #main .container .topNav .nav-con {
+  padding: 60px 0 20px;
+  /* border-bottom: 1px solid #eee; */
+  display: flex;
+}
+#wrap #main .container .topNav .nav-con .left {
+  padding: 0 45px 0 0;
+}
+#wrap #main .container .topNav .nav-con .left a {
+  display: block;
+}
+#wrap #main .container .topNav .nav-con .left a h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+#wrap #main .container .topNav .nav-con .rightMenu {
+  height: 20px;
+  display: block;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul {
+  display: flex;
+  padding: 15px 0 0 0;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li {
+  margin: 0 25px 0 0;
+  position: relative;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li a {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  transition: all 0.2s;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li a:hover {
+  color: #222;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li .sub-menu-box {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  top: 36px;
+  left: -30px;
+  background: #fff;
+  display: none;
+  z-index: 4;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li .sub-menu-box > ul {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  background: #fff;
+  border: 1px solid rgb(229, 229, 229);
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li .sub-menu-box > ul > li {
+  padding-bottom: 20px;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li .sub-menu-box > ul > li:last-child {
+  padding-bottom: 0;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li .sub-menu-box > ul > li > a {
+  display: block;
+  color: rgb(153, 153, 153);
+  transition: all 0.2s;
+}
+#wrap #main .container .topNav .nav-con .rightMenu > ul > li .sub-menu-box > ul > li > a:hover {
+  color: #222;
+}
+#wrap #main .container .visual img {
+  width: 100%;
+}
+#wrap #main .container .content {
+  padding: 80px 0 0 0;
+}
+#wrap #main .container .content .tabType {
+  padding: 0 0 80px 0;
+}
+#wrap #main .container .content .tabType ul {
+  display: flex;
+  justify-content: center;
+}
+#wrap #main .container .content .tabType ul li {
+  padding: 0 12px;
+}
+#wrap #main .container .content .tabType ul li a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999;
+  overflow: hidden;
+}
+#wrap #main .container .content .tabType ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #222;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+#wrap #main .container .content .tabType ul li:hover a {
+  color: #222;
+}
+#wrap #main .container .content .tabType ul li:hover a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #222;
+  transform: translateX(0);
+}
+#wrap #main .container .content .tabType ul li.on a {
+  color: #222;
+}
+#wrap #main .container .content .tabType ul li.on a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translateX(0);
+  background: #222;
+}
+#wrap #main .container .content .tabContents .tab-con {
+  display: none;
+}
+#wrap #main .container .content .tabContents .tab-con.on2 {
+  display: block;
+}
+#wrap #main .container .content .tabContents .tab-con .storyImg {
+  position: relative;
+  margin: 0 auto;
+  max-width: 750px;
+}
+#wrap #main .container .content .tabContents .tab-con .storyImg img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#wrap #main .container .content .tabContents .tab-con .storyImg .ection-mov {
+  position: absolute;
+  width: 92%;
+  left: 50%;
+  bottom: 11%;
+  transform: translateX(-50%);
+}
+#wrap #main .container .content .tabContents .tab-con .storyImg .ection-mov video {
+  width: 100%;
+}
+#wrap #main .container .content .tabContents .tab-con .storyImg .pinkVod {
+  max-width: 750px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+#wrap #main .container .content .tabContents .tab-con .storyImg .pinkVod iframe {
+  width: 100%;
+  height: 450px;
+}
+#wrap #main .container .otherContents {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#wrap #main .container .otherContents .othTitle {
+  width: 980px;
+  height: 105px;
+}
+#wrap #main .container .otherContents .othTitle h2 {
+  padding: 55px 0 30px 0;
+  font-size: 20px;
+  color: #222;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+#wrap #main .container .otherContents .prdList ul {
+  display: flex;
+}
+#wrap #main .container .otherContents .prdList ul li {
+  padding: 0 4px;
+}
+#wrap #main .container .otherContents .storyPagenation {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+#wrap #main .container .otherContents .storyPagenation .first {
+  margin-right: 9px;
+}
+#wrap #main .container .otherContents .storyPagenation .first a img {
+  width: auto;
+}
+#wrap #main .container .otherContents .storyPagenation .prev {
+  margin-right: 9px;
+}
+#wrap #main .container .otherContents .storyPagenation .prev a img {
+  width: auto;
+}
+#wrap #main .container .otherContents .storyPagenation .current {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 7px;
+  margin-right: 33px;
+  font-size: 14px;
+  position: relative;
+}
+#wrap #main .container .otherContents .storyPagenation .current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 20px;
+  height: 2px;
+  margin-top: -1px;
+  background: rgb(221, 221, 221);
+}
+#wrap #main .container .otherContents .storyPagenation .next {
+  margin-left: 9px;
+}
+#wrap #main .container .otherContents .storyPagenation .next a img {
+  width: auto;
+}
+#wrap #main .container .otherContents .storyPagenation .last {
+  margin-left: 9px;
+}
+#wrap #main .container .otherContents .storyPagenation .last a img {
+  margin: 2px 0 0 0;
+  width: auto;
+}
+
+.hide {
+  display: none;
+}

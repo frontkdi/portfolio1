@@ -1,0 +1,426 @@
+@charset "UTF-8";
+@import './_config.scss';
+@import url('#{$path}fonts.css'); 
+@import url('#{$path}reset.css');
+@import url('#{$path}header.css');
+@import url('#{$path}footer.css');
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 89px;
+  position: relative;
+  user-select: none;
+  // main //
+  #main {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    .container {
+      position: relative;
+      #section1 {
+        background: url(../images/filterinfo_sec01.jpg) no-repeat 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 980px;
+        position: relative;
+        .topNav {
+          width: 100%;
+          padding: 0 60px;
+          .nav-con {
+            padding: 60px 0 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            .left {
+              padding: 0 45px 0 0;
+              a {
+                display: block;
+                h2 {
+                  font-size: 32px;
+                  font-weight: 500;
+                }
+              }
+            }
+            .rightMenu {
+              height: 20px;
+              display: block;
+              > ul {
+                display: flex;
+                padding: 15px 0 0 0;
+                > li {
+                  margin: 0 25px 0 0;
+                  a {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: rgb(153, 153, 153);
+                    transition: all .2s;
+                    &:hover {
+                      color: #222;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .section-text {
+          position: absolute;
+          top: 40%;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          color: #000;
+          h1 {
+            font-size: 40px;
+            font-weight: 800;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            padding: 20px 0 10px 0;
+            &:last-child {
+              padding: 0;
+            }
+          }
+        }
+      }
+      #section2 {
+        position: relative;
+        height: 980px;
+        background: #fff;
+        .sec2-text {
+          position: absolute;
+          left: 0;
+          top: 40%;
+          width: 100%;
+          text-align: center;
+          color: #000;
+          .sec2-title {
+            width: 700px;
+            height: 44px;
+            margin: 0 auto;
+            background: url(../images/sec02_logo_group.png) no-repeat 50% 50%;
+            background-size: cover;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            padding: 30px 0 0 0;
+          }
+        }
+        .bg1 {
+          width: 270px;
+          height: 360px;
+          position: absolute;
+          top: 0;
+          left: 5%;
+          background: url(../images/sec02_view_01.jpg) no-repeat;
+          background-size: cover;
+        }
+        .bg2 {
+          width: 400px;
+          height: 270px;
+          position: absolute;
+          top: 11%;
+          right: 0;
+          background: url(../images/sec02_view_02.jpg) no-repeat;
+          background-size: cover;
+        }
+        .bg3 {
+          width: 360px;
+          height: 230px;
+          position: absolute;
+          bottom: 7%;
+          left: 0;
+          background: url(../images/sec02_view_03.jpg) no-repeat;
+          background-size: cover;
+        }
+        .bg4 {
+          width: 240px;
+          height: 360px;
+          position: absolute;
+          bottom: 0;
+          right: 5%;
+          background: url(../images/sec02_view_04.jpg) no-repeat;
+          background-size: cover;
+        }
+      }
+      #section3 {
+        position: relative;
+        padding: 160px 0 0 0;
+        .section-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          min-height: 540px;
+          background: url(../images/filterinfo_sec03_bg_re.jpg) no-repeat;
+          background-size: cover;
+          z-index: -1;
+        }
+        .content {
+          padding: 0 0 100px 0;
+          position: relative;
+          max-width: 980px;
+          margin: 0 auto;
+          .con-title {
+            h2 {
+              font-size: 30px;
+              font-weight: 600;
+              color: #000;
+              span {
+                display: inline-block;
+                width: 1px;
+                height: 20px;
+                background: #000;
+                margin: 0 10px;
+              }
+            }
+          }
+          .con-img {
+            width: 980px;
+            height: 600px;
+            margin: 40px auto;
+            background: url() no-repeat;
+            background-size: cover;
+            &.con-img1 {
+              background-image: url(../images/sec03_view_01.jpg);
+            }
+            &.con-img2 {
+              background-image: url(../images/sec03_view_02.jpg);
+            }
+            &.con-img3 {
+              background-image: url(../images/sec03_view_03.jpg);
+            }
+          }
+          .con-text {
+            display: flex;
+            .img-box {
+              display: inline-block;
+              width: 60px;
+              height: 60px;
+              margin: 0 20px 0 0;
+              background: url() no-repeat;
+              background-size: cover;
+              &.img-box1 {
+                background-image: url(../images/sec03_obj_01_re.png);
+              }
+              &.img-box2 {
+                background-image: url(../images/sec03_obj_02_re.jpg);
+              }
+              &.img-box3 {
+                background-image: url(../images/sec03_obj_03_re.png);
+              }
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              color: #000;
+            }
+          }
+        }
+      }
+      #section4 {
+        position: relative;
+        height: 1730px;
+        padding: 150px;
+        .section-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          min-height: 540px;
+          background: url(../images/filterinfo_sec03_bg_re.jpg) no-repeat;
+          background-size: cover;
+        }
+        .content {
+          position: relative;
+          max-width: 980px;
+          margin: 0 auto;
+          .con-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            .con-bg {
+              width: 735px;
+              height: 460px;
+              background: url(../images/sec04_view_01.gif) no-repeat 50% 50%;
+              background-size: cover;
+            }
+            .con-title {
+              margin: 40px 0;
+              h2 {
+                font-size: 28px;
+                font-weight: 600;
+                color: #000;
+              }
+            }
+            span {
+              display: block;
+              width: 10px;
+              height: 10px;
+              border-radius: 5px;
+              background: #000;
+              margin: 0 0 20px 0;
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              color: #000;
+            }
+          }
+          .con-box2 {
+            position: absolute;
+            top: 560px;
+            right: 0;
+            .bg {
+              margin: 0 0 0 450px;
+              width: 490px;
+              height: 650px;
+              background: url(../images/sec04_view_02.jpg) no-repeat;
+              background-size: cover;
+            }
+            p {
+              position: absolute;
+              right: -64px;
+              bottom: 35px;
+              transform: rotate(90deg);
+              color: #000;
+            }
+          }
+        }
+      }
+      #section5 {
+        position: relative;
+        height: 1120px;
+        background: #f7f7f7;
+        .content {
+          position: relative;
+          max-width: 980px;
+          margin: 0 auto;
+          >.con-box {
+            position: absolute;
+            top: -230px;
+            right: 0;
+            .bg {
+              width: 735px;
+              height: 460px;
+              background: url(../images/sec05_view_01.jpg) no-repeat;
+              background-size: cover;
+            }
+            > p {
+              position: absolute;
+              left: -64px;
+              bottom: 35px;
+              transform: rotate(270deg);
+              color: #000;
+            }
+          }
+          .con-box2 {
+            position: absolute;
+            top: 330px;
+            left: 0;
+            width: 980px;
+            .bg {
+              float: left;
+              width: 490px;
+              height: 650px;
+              background: url(../images/sec05_view_02.jpg) no-repeat;
+              background-size: cover;
+            }
+            .text-box {
+              display: inline-block;
+              padding: 0 0 0 90px;
+              .title {
+                margin: 0 0 40px 0;
+                h2 {
+                  font-size: 28px;
+                  font-weight: 600;
+                  color: #000;
+                }
+              }
+              span {
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 5px;
+                background: #000;
+                margin: 0 0 20px 0;
+              }
+              .bros {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+      #section6 {
+        position: relative;
+        background: #f7f7f7;
+        padding: 0 0 180px 0;
+        .content {
+          position: relative;
+          max-width: 980px;
+          margin: 0 auto;
+          color: #000;
+          .sec-title {
+            padding: 100px 0 40px 0;
+            text-align: center;
+            h2 {
+              font-size: 32px;
+              font-weight: 700;
+            }
+          }
+          .bg {
+            width: 980px;
+            height: 560px;
+            background: url(../images/sec06_map.jpg) no-repeat;
+            background-size: cover;
+            border: 1px solid #ddd;
+          }
+          .con-title {
+            padding: 40px 0 30px 0;
+            h3 {
+              font-size: 26px;
+              font-weight: 600;
+            }
+          }
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #000;
+            span {
+              display: inline-block;
+              width: 5px;
+              height: 5px;
+              background: #000;
+              margin: 0 10px 3px 0;
+            }
+          }
+          .map {
+            a {
+              margin: 40px 0 0 0;
+              display: block;
+              width: 240px;
+              height: 80px;
+              line-height: 80px;
+              text-align: center;
+              background: #000;
+              font-size: 18px;
+              font-weight: 500;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
